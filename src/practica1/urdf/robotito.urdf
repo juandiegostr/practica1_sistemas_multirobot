@@ -38,7 +38,7 @@
   <joint name="right_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_wheel"/>
-    <origin xyz="-0.1 -0.17 0"/>
+    <origin xyz="-0.1 -0.1705 0"/> <!-- 0.5mm de margen -->
     <axis xyz="0 1 0"/>
   </joint>
 
@@ -62,7 +62,7 @@
   <joint name="left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="left_wheel"/>
-    <origin xyz="-0.1 0.17 0"/>
+    <origin xyz="-0.1 0.1705 0"/>
     <axis xyz="0 1 0"/>
   </joint>
 
@@ -85,7 +85,7 @@
   <joint name="caster_joint" type="fixed">
     <parent link="base_link"/>
     <child link="caster_wheel"/>
-    <origin xyz="0.15 0 -0.05"/>
+    <origin xyz="0.15 0 -0.105"/> <!-- 0.5mm de margen -->
   </joint>
 
 </robot>
