@@ -1,0 +1,9 @@
+/ros2_ws_multirobots/build/practica1/CMakeFiles/uninstall.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/practica1_uninstall.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/test.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/edit_cache.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/rebuild_cache.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/list_install_components.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/install.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/install/local.dir
+/ros2_ws_multirobots/build/practica1/CMakeFiles/install/strip.dir

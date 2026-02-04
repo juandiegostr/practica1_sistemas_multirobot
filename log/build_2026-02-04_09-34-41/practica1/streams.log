@@ -1,0 +1,55 @@
+[0.014s] Invoking command in '/ros2_ws_multirobots/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros2_ws_multirobots/src/practica1 -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/practica1
+[0.090s] -- The C compiler identification is GNU 13.3.0
+[0.168s] -- The CXX compiler identification is GNU 13.3.0
+[0.217s] -- Detecting C compiler ABI info
+[0.369s] -- Detecting C compiler ABI info - done
+[0.393s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.394s] -- Detecting C compile features
+[0.396s] -- Detecting C compile features - done
+[0.420s] -- Detecting CXX compiler ABI info
+[0.579s] -- Detecting CXX compiler ABI info - done
+[0.605s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.605s] -- Detecting CXX compile features
+[0.607s] -- Detecting CXX compile features - done
+[0.618s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.800s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.968s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.021s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.040s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.061s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.084s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.177s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.181s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.337s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.370s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.396s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.481s] -- Found rclpy: 7.1.6 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.484s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.608s] -- Added test 'lint_cmake' to check CMake code style
+[1.610s] -- Added test 'xmllint' to check XML markup files
+[1.612s] -- Configuring done (1.6s)
+[1.618s] -- Generating done (0.0s)
+[1.620s] -- Build files have been written to: /ros2_ws_multirobots/build/practica1
+[1.629s] Invoked command in '/ros2_ws_multirobots/build/practica1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros2_ws_multirobots/src/practica1 -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/practica1
+[1.632s] Invoking command in '/ros2_ws_multirobots/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/practica1 -- -j16 -l16
+[1.705s] Invoked command in '/ros2_ws_multirobots/build/practica1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/practica1 -- -j16 -l16
+[1.727s] Invoking command in '/ros2_ws_multirobots/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/practica1
+[1.735s] -- Install configuration: ""
+[1.735s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1//urdf
+[1.736s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1//urdf/robotito.urdf
+[1.736s] -- Installing: /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/package_run_dependencies/practica1
+[1.736s] -- Installing: /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/parent_prefix_path/practica1
+[1.737s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/environment/ament_prefix_path.sh
+[1.737s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/environment/ament_prefix_path.dsv
+[1.737s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/environment/path.sh
+[1.738s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/environment/path.dsv
+[1.738s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.bash
+[1.738s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.sh
+[1.738s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.zsh
+[1.739s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.dsv
+[1.739s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/package.dsv
+[1.739s] -- Installing: /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/packages/practica1
+[1.739s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/cmake/practica1Config.cmake
+[1.740s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/cmake/practica1Config-version.cmake
+[1.740s] -- Installing: /ros2_ws_multirobots/install/practica1/share/practica1/package.xml
+[1.741s] Invoked command in '/ros2_ws_multirobots/build/practica1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/practica1

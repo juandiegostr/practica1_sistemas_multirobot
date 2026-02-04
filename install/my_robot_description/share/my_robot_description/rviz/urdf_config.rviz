@@ -1,0 +1,61 @@
+Background Color: 48 48 48
+Display Trees:
+  -
+    Class: rviz_default_plugins/RobotModel
+    Description Source: Robot Description
+    Description Topic:
+      Value: /robot_description
+    Enabled: true
+    Name: RobotModel
+    Visual Enabled: true
+  -
+    Class: rviz_default_plugins/TF
+    Enabled: true
+    Name: TF
+    Show Arrows: true
+    Show Axes: true
+    Show Names: true
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: RobotModel
+    - Name: TF
+  Enabled: true
+  Global Options:
+    Fixed Frame: base_link
+  Name: root
+  Tools:
+    -
+      Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    -
+      Class: rviz_default_plugins/MoveCamera
+    -
+      Class: rviz_default_plugins/Select
+    -
+      Class: rviz_default_plugins/FocusCamera
+    -
+      Class: rviz_default_plugins/Measure
+    -
+      Class: rviz_default_plugins/SetGoal
+    -
+      Class: rviz_default_plugins/SetInitialPose
+    -
+      Class: rviz_default_plugins/NavGoal
+  Value: true
+  Views:
+    -
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.0
+      Enable Stereo Rendering:
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.0
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.0
