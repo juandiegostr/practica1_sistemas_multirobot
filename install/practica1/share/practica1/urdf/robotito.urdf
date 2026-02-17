@@ -20,7 +20,7 @@
   <link name="right_wheel">
     <visual>
       <geometry>
-        <cylinder length="0.04" radius="0.05"/>
+        <cylinder length="0.04" radius="0.1"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -29,7 +29,7 @@
     </visual>
     <collision>
       <geometry>
-        <cylinder length="0.04" radius="0.05"/>
+        <cylinder length="0.04" radius="0.1"/>
       </geometry>
       <origin rpy="1.5707 0 0" xyz="0 0 0"/>
     </collision>
@@ -38,22 +38,23 @@
   <joint name="right_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_wheel"/>
-    <origin xyz="-0.1 -0.18 0"/> <!-- 1mm de margen -->
+    <origin xyz="-0.1 -0.1705 0"/> <!-- 0.5mm de margen -->
     <axis xyz="0 1 0"/>
   </joint>
 
   <link name="left_wheel">
     <visual>
       <geometry>
-        <cylinder length="0.04" radius="0.05"/>
+        <cylinder length="0.04" radius="0.1"/>
       </geometry>
-      <material name="black"/>
+      <material name="black">
         <color rgba="0 0 0 1"/>
+      </material>
       <origin rpy="1.5707 0 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <cylinder length="0.04" radius="0.05"/>
+        <cylinder length="0.04" radius="0.1"/>
       </geometry>
       <origin rpy="1.5707 0 0" xyz="0 0 0"/>
     </collision>
@@ -62,14 +63,14 @@
   <joint name="left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="left_wheel"/>
-    <origin xyz="-0.1 0.18 0"/>
+    <origin xyz="-0.1 0.1705 0"/>
     <axis xyz="0 1 0"/>
   </joint>
 
   <link name="caster_wheel">
     <visual>
       <geometry>
-        <sphere radius="0.05"/>
+        <sphere radius="0.025"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -77,7 +78,7 @@
     </visual>
     <collision>
       <geometry>
-        <sphere radius="0.05"/>
+        <sphere radius="0.025"/>
       </geometry>
     </collision>
   </link>
@@ -85,7 +86,7 @@
   <joint name="caster_joint" type="fixed">
     <parent link="base_link"/>
     <child link="caster_wheel"/>
-    <origin xyz="0.15 0 -0.11"/> <!-- 1mm de margen -->
+    <origin xyz="0.15 0 -0.075"/>
   </joint>
 
 </robot>
