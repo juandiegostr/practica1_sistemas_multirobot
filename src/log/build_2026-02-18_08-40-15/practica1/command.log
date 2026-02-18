@@ -1,0 +1,1 @@
+Invoking command in '/ros2_ws_multirobots/src/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros2_ws_multirobots/src/practica1 -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/src/install/practica1

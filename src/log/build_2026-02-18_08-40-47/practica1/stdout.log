@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1//urdf
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1//urdf/robotito.urdf.xacro
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1//urdf/inertial_macros.xacro
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1//urdf/robotito.urdf
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1//urdf/gazebo_control.xacro
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1//launch
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1//launch/sencillo_launch.launch
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/ament_index/resource_index/package_run_dependencies/practica1
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/ament_index/resource_index/parent_prefix_path/practica1
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/environment/ament_prefix_path.sh
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/environment/ament_prefix_path.dsv
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/environment/path.sh
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/environment/path.dsv
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/local_setup.bash
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/local_setup.sh
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/local_setup.zsh
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/local_setup.dsv
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/package.dsv
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/ament_index/resource_index/packages/practica1
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/cmake/practica1Config.cmake
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/cmake/practica1Config-version.cmake
+-- Installing: /ros2_ws_multirobots/src/install/practica1/share/practica1/package.xml

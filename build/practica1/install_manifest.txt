@@ -1,4 +1,7 @@
+/ros2_ws_multirobots/install/practica1/share/practica1//urdf/robotito.urdf.xacro
+/ros2_ws_multirobots/install/practica1/share/practica1//urdf/inertial_macros.xacro
 /ros2_ws_multirobots/install/practica1/share/practica1//urdf/robotito.urdf
+/ros2_ws_multirobots/install/practica1/share/practica1//urdf/gazebo_control.xacro
 /ros2_ws_multirobots/install/practica1/share/practica1//launch/sencillo_launch.launch
 /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/package_run_dependencies/practica1
 /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/parent_prefix_path/practica1
