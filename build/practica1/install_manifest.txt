@@ -1,5 +1,6 @@
 /ros2_ws_multirobots/install/practica1/share/practica1//urdf/robotito.urdf.xacro
 /ros2_ws_multirobots/install/practica1/share/practica1//urdf/inertial_macros.xacro
+/ros2_ws_multirobots/install/practica1/share/practica1//urdf/lidar.xacro
 /ros2_ws_multirobots/install/practica1/share/practica1//urdf/robotito.urdf
 /ros2_ws_multirobots/install/practica1/share/practica1//urdf/gazebo_control.xacro
 /ros2_ws_multirobots/install/practica1/share/practica1//launch/sencillo_launch.launch
