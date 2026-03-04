@@ -53,7 +53,7 @@
 
 
   <!-- BASE LINK -->
-  <link name="base_link">
+  <link name="${ns_prefix}base_link">
     <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
@@ -77,7 +77,7 @@
 
   <!-- Wheel Macro -->
   <xacro:macro name="wheel" params="prefix offset_y">
-    <link name="${prefix}_wheel">
+    <link name="${ns_prefix}${prefix}_wheel">
       <visual>
         <origin xyz="0 0 0" rpy="1.5707 0 0 "/>
         <geometry>
@@ -96,9 +96,9 @@
       </xacro:inertial_cylinder>
     </link>
 
-    <joint name="${prefix}_wheel_joint" type="continuous">
-      <parent link="base_link"/>
-      <child link="${prefix}_wheel"/>
+    <joint name="${ns_prefix}${prefix}_wheel_joint" type="continuous">
+      <parent link="${ns_prefix}base_link"/>
+      <child link="${ns_prefix}${prefix}_wheel"/>
       <origin xyz="${-wheel_offset_x} ${offset_y} ${wheel_offset_z}" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
     </joint>
@@ -110,7 +110,7 @@
 
   <!-- CASTER WHEEL -->
 
-  <link name="caster_wheel">
+  <link name="${ns_prefix}caster_wheel">
     <visual>
       <geometry>
         <sphere radius="${caster_wheel_radius}"/>
@@ -127,9 +127,9 @@
     </xacro:inertial_sphere>
   </link>
 
-  <joint name="caster_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="caster_wheel"/>
+  <joint name="${ns_prefix}caster_joint" type="fixed">
+    <parent link="${ns_prefix}base_link"/>
+    <child link="${ns_prefix}caster_wheel"/>
     <origin xyz="${caster_wheel_offset_x} 0 ${caster_wheel_offset_z}"/>
   </joint>
 

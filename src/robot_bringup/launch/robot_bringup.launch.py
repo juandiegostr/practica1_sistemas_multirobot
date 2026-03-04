@@ -147,7 +147,6 @@ def launch_setup(context, *args, **kwargs):
             parameters=[
                 {'robot_description': robot_desc},
                 {'use_sim_time': True},
-                {'frame_prefix': f'{ns}/'},
             ],
         )
 
