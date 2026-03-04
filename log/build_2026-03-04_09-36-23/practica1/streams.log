@@ -1,0 +1,28 @@
+[2.045s] Invoking command in '/ros2_ws_multirobots/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/practica1 -- -j16 -l16
+[2.905s] Invoked command in '/ros2_ws_multirobots/build/practica1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/practica1 -- -j16 -l16
+[2.919s] Invoking command in '/ros2_ws_multirobots/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/practica1
+[2.932s] -- Install configuration: ""
+[2.932s] -- Execute custom install script
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1//urdf/camera.xacro
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1//urdf/gazebo_control.xacro
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1//urdf/inertial_macros.xacro
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1//urdf/lidar.xacro
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1//urdf/robotito.urdf
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1//urdf/robotito.urdf.xacro
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1//launch/sencillo_launch.launch
+[2.933s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/package_run_dependencies/practica1
+[2.934s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/parent_prefix_path/practica1
+[2.934s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/environment/ament_prefix_path.sh
+[2.934s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/environment/ament_prefix_path.dsv
+[2.934s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/environment/path.sh
+[2.934s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/environment/path.dsv
+[2.934s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.bash
+[2.934s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.sh
+[2.935s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.zsh
+[2.935s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/local_setup.dsv
+[2.935s] -- Symlinking: /ros2_ws_multirobots/install/practica1/share/practica1/package.dsv
+[2.955s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/ament_index/resource_index/packages/practica1
+[2.955s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/cmake/practica1Config.cmake
+[2.955s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/cmake/practica1Config-version.cmake
+[2.955s] -- Up-to-date symlink: /ros2_ws_multirobots/install/practica1/share/practica1/package.xml
+[2.957s] Invoked command in '/ros2_ws_multirobots/build/practica1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/practica1

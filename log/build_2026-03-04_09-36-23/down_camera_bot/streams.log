@@ -1,0 +1,24 @@
+[2.634s] Invoking command in '/ros2_ws_multirobots/build/down_camera_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/down_camera_bot -- -j16 -l16
+[2.712s] Invoked command in '/ros2_ws_multirobots/build/down_camera_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/down_camera_bot -- -j16 -l16
+[2.716s] Invoking command in '/ros2_ws_multirobots/build/down_camera_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/down_camera_bot
+[2.726s] -- Install configuration: ""
+[2.726s] -- Execute custom install script
+[2.727s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/launch/spawn.launch.py
+[2.727s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/urdf/cubo_camara.urdf
+[2.727s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/worlds/camera.sdf
+[2.727s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/ament_index/resource_index/package_run_dependencies/down_camera_bot
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/ament_index/resource_index/parent_prefix_path/down_camera_bot
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/environment/ament_prefix_path.sh
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/environment/ament_prefix_path.dsv
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/environment/path.sh
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/environment/path.dsv
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/local_setup.bash
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/local_setup.sh
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/local_setup.zsh
+[2.728s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/local_setup.dsv
+[2.729s] -- Symlinking: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/package.dsv
+[2.747s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/ament_index/resource_index/packages/down_camera_bot
+[2.748s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/cmake/down_camera_botConfig.cmake
+[2.748s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/cmake/down_camera_botConfig-version.cmake
+[2.748s] -- Up-to-date symlink: /ros2_ws_multirobots/install/down_camera_bot/share/down_camera_bot/package.xml
+[4.555s] Invoked command in '/ros2_ws_multirobots/build/down_camera_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/down_camera_bot
