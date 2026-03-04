@@ -15,11 +15,11 @@
             <wheel_separation>0.35</wheel_separation>
             <wheel_radius>0.1</wheel_radius>
             <odom_publish_frequency>1</odom_publish_frequency>
-            <topic>cmd_vel</topic>
-            <odom_topic>odom</odom_topic>
-            <tf_topic>tf</tf_topic>
-            <frame_id>odom</frame_id>
-            <child_frame_id>base_link</child_frame_id>
+            <topic>$(arg prefix)cmd_vel</topic>
+            <odom_topic>$(arg prefix)odom</odom_topic>
+            <tf_topic>$(arg prefix)tf</tf_topic>
+            <frame_id>$(arg prefix)odom</frame_id>
+            <child_frame_id>$(arg prefix)base_link</child_frame_id>
         </plugin>
     </gazebo>
 
@@ -27,7 +27,7 @@
         <plugin 
             filename="gz-sim-joint-state-publisher-system" 
             name="gz::sim::systems::JointStatePublisher">
-            <topic>joint_states</topic>
+            <topic>$(arg prefix)joint_states</topic>
             <joint_name>left_wheel_joint</joint_name>
             <joint_name>right_wheel_joint</joint_name>
         </plugin>

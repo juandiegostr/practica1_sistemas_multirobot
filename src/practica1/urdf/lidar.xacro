@@ -56,8 +56,8 @@
                   <stddev>0.01</stddev>
                 </noise>
             </lidar>
-            <topic>scan</topic>
-            <gz_frame_id>laser_frame</gz_frame_id>
+            <topic>$(arg prefix)scan</topic>
+            <gz_frame_id>$(arg prefix)laser_frame</gz_frame_id>
         </sensor>
     </gazebo>
 

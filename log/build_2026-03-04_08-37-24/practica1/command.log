@@ -1,0 +1,2 @@
+Invoking command in '/ros2_ws_multirobots/build/practica1': /usr/bin/cmake /ros2_ws_multirobots/src/practica1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/practica1
+Invoked command in '/ros2_ws_multirobots/build/practica1' returned '1': /usr/bin/cmake /ros2_ws_multirobots/src/practica1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/practica1

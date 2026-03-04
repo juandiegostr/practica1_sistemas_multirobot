@@ -1,13 +1,1 @@
-<launch>
-    <let name="urdf_path" 
-         value="$(find-pkg-share practica1)/urdf/robotito.urdf" />
-
-    <node pkg="robot_state_publisher" exec="robot_state_publisher">
-        <param name="robot_description"
-               value="$(command 'cat $(var urdf_path)')" />
-    </node>
-
-    <node pkg="joint_state_publisher" exec="joint_state_publisher" />
-
-    <node pkg="rviz2" exec="rviz2" output="screen" />
-</launch>
+/ros2_ws_multirobots/src/practica1/launch/sencillo_launch.launch
