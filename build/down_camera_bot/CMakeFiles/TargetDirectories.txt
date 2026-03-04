@@ -1,0 +1,9 @@
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/uninstall.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/down_camera_bot_uninstall.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/test.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/edit_cache.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/rebuild_cache.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/list_install_components.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/install.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/install/local.dir
+/ros2_ws_multirobots/build/down_camera_bot/CMakeFiles/install/strip.dir

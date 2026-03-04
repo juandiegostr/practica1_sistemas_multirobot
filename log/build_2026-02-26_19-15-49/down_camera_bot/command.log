@@ -1,0 +1,4 @@
+Invoking command in '/ros2_ws_multirobots/build/down_camera_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/down_camera_bot -- -j16 -l16
+Invoked command in '/ros2_ws_multirobots/build/down_camera_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/down_camera_bot -- -j16 -l16
+Invoking command in '/ros2_ws_multirobots/build/down_camera_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/down_camera_bot
+Invoked command in '/ros2_ws_multirobots/build/down_camera_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/down_camera_bot

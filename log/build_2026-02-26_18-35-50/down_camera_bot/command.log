@@ -1,0 +1,2 @@
+Invoking command in '/ros2_ws_multirobots/build/down_camera_bot': /usr/bin/cmake /ros2_ws_multirobots/src/down_camera_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/down_camera_bot
+Invoked command in '/ros2_ws_multirobots/build/down_camera_bot' returned '1': /usr/bin/cmake /ros2_ws_multirobots/src/down_camera_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/down_camera_bot

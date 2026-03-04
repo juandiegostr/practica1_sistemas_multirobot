@@ -1,0 +1,4 @@
+Invoking command in '/ros2_ws_multirobots/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/practica1 -- -j16 -l16
+Invoked command in '/ros2_ws_multirobots/build/practica1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws_multirobots/build/practica1 -- -j16 -l16
+Invoking command in '/ros2_ws_multirobots/build/practica1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/practica1
+Invoked command in '/ros2_ws_multirobots/build/practica1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws_multirobots/build/practica1

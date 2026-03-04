@@ -1,0 +1,29 @@
+[0.016s] Invoking command in '/ros2_ws_multirobots/build/down_camera_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros2_ws_multirobots/src/down_camera_bot -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/down_camera_bot
+[0.042s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.309s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.357s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.365s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.378s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.391s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.451s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.452s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.526s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.606s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.606s]   By not providing "Findgazebo_ros.cmake" in CMAKE_MODULE_PATH this project
+[0.606s]   has asked CMake to find a package configuration file provided by
+[0.606s]   "gazebo_ros", but CMake did not find one.
+[0.607s] 
+[0.607s]   Could not find a package configuration file provided by "gazebo_ros" with
+[0.607s]   any of the following names:
+[0.607s] 
+[0.607s]     gazebo_rosConfig.cmake
+[0.608s]     gazebo_ros-config.cmake
+[0.608s] 
+[0.608s]   Add the installation prefix of "gazebo_ros" to CMAKE_PREFIX_PATH or set
+[0.608s]   "gazebo_ros_DIR" to a directory containing one of the above files.  If
+[0.608s]   "gazebo_ros" provides a separate development package or SDK, be sure it has
+[0.609s]   been installed.
+[0.609s] 
+[0.609s] [0m
+[0.609s] -- Configuring incomplete, errors occurred!
+[0.612s] Invoked command in '/ros2_ws_multirobots/build/down_camera_bot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros2_ws_multirobots/src/down_camera_bot -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/down_camera_bot

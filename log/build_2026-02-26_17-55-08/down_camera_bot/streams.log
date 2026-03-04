@@ -1,0 +1,44 @@
+[0.020s] Invoking command in '/ros2_ws_multirobots/build/down_camera_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros2_ws_multirobots/src/down_camera_bot -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/down_camera_bot
+[0.292s] -- The C compiler identification is GNU 13.3.0
+[0.451s] -- The CXX compiler identification is GNU 13.3.0
+[0.491s] -- Detecting C compiler ABI info
+[0.637s] -- Detecting C compiler ABI info - done
+[0.662s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.662s] -- Detecting C compile features
+[0.663s] -- Detecting C compile features - done
+[0.684s] -- Detecting CXX compiler ABI info
+[0.855s] -- Detecting CXX compiler ABI info - done
+[0.880s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.881s] -- Detecting CXX compile features
+[0.882s] -- Detecting CXX compile features - done
+[0.911s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.150s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.375s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.475s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.504s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.536s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.571s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.704s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.712s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.939s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.965s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.998s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.128s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[2.128s]   By not providing "Findgazebo_ros.cmake" in CMAKE_MODULE_PATH this project
+[2.129s]   has asked CMake to find a package configuration file provided by
+[2.129s]   "gazebo_ros", but CMake did not find one.
+[2.129s] 
+[2.129s]   Could not find a package configuration file provided by "gazebo_ros" with
+[2.129s]   any of the following names:
+[2.129s] 
+[2.130s]     gazebo_rosConfig.cmake
+[2.130s]     gazebo_ros-config.cmake
+[2.130s] 
+[2.130s]   Add the installation prefix of "gazebo_ros" to CMAKE_PREFIX_PATH or set
+[2.130s]   "gazebo_ros_DIR" to a directory containing one of the above files.  If
+[2.130s]   "gazebo_ros" provides a separate development package or SDK, be sure it has
+[2.130s]   been installed.
+[2.131s] 
+[2.131s] [0m
+[2.131s] -- Configuring incomplete, errors occurred!
+[2.137s] Invoked command in '/ros2_ws_multirobots/build/down_camera_bot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros2_ws_multirobots/src/down_camera_bot -DCMAKE_INSTALL_PREFIX=/ros2_ws_multirobots/install/down_camera_bot

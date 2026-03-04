@@ -1,0 +1,4 @@
+source;share/down_camera_bot/local_setup.bash
+source;share/down_camera_bot/local_setup.dsv
+source;share/down_camera_bot/local_setup.sh
+source;share/down_camera_bot/local_setup.zsh
