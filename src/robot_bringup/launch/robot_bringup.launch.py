@@ -100,7 +100,7 @@ def launch_setup(context, *args, **kwargs):
                 'direction': 'GZ_TO_ROS',
             },
             {
-                'ros_topic_name': f'/{ns}/tf',
+                'ros_topic_name': '/tf',
                 'gz_topic_name': f'/{prefix}tf',
                 'ros_type_name': 'tf2_msgs/msg/TFMessage',
                 'gz_type_name': 'gz.msgs.Pose_V',
@@ -138,7 +138,7 @@ def launch_setup(context, *args, **kwargs):
         doc = xacro.process_file(xacro_file, mappings={'prefix': prefix})
         robot_desc = doc.toxml()
 
-        # Robot State Publisher (namespaced)
+        # Robot State Publisher (namespaced, but TFs go to global /tf)
         rsp = Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -147,6 +147,10 @@ def launch_setup(context, *args, **kwargs):
             parameters=[
                 {'robot_description': robot_desc},
                 {'use_sim_time': True},
+            ],
+            remappings=[
+                ('/tf', '/tf'),
+                ('/tf_static', '/tf_static'),
             ],
         )
 
