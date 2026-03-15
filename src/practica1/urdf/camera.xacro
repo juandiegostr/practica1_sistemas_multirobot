@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <joint name="${ns_prefix}camera_mast_joint" type="fixed">
-        <parent link="${ns_prefix}base_link"/>
-        <child link="${ns_prefix}camera_mast"/>
+    <joint name="${prefijo_ns}camera_mast_joint" type="fixed">
+        <parent link="${prefijo_ns}base_link"/>
+        <child link="${prefijo_ns}camera_mast"/>
         <origin xyz="0.10 0 0.20" rpy="0 0 0"/>
     </joint>
 
-    <link name="${ns_prefix}camera_mast">
+    <link name="${prefijo_ns}camera_mast">
         <visual>
             <geometry>
                 <cylinder radius="0.02" length="0.30"/>
@@ -24,13 +24,13 @@
         </xacro:inertial_cylinder>
     </link>
 
-    <joint name="${ns_prefix}camera_joint" type="fixed">
-        <parent link="${ns_prefix}camera_mast"/>
-        <child link="${ns_prefix}camera_link"/>
+    <joint name="${prefijo_ns}camera_joint" type="fixed">
+        <parent link="${prefijo_ns}camera_mast"/>
+        <child link="${prefijo_ns}camera_link"/>
         <origin xyz="0.02 0 0.15" rpy="0 0 0"/>
     </joint>
 
-    <link name="${ns_prefix}camera_link">
+    <link name="${prefijo_ns}camera_link">
         <visual>
             <geometry>
                 <box size="0.05 0.05 0.05"/>
@@ -47,15 +47,15 @@
         </xacro:inertial_box>
     </link>
 
-    <joint name="${ns_prefix}camera_optical_joint" type="fixed">
+    <joint name="${prefijo_ns}camera_optical_joint" type="fixed">
         <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
-        <parent link="${ns_prefix}camera_link"/>
-        <child link="${ns_prefix}camera_link_optical"/>
+        <parent link="${prefijo_ns}camera_link"/>
+        <child link="${prefijo_ns}camera_link_optical"/>
     </joint>
 
-    <link name="${ns_prefix}camera_link_optical"></link>
+    <link name="${prefijo_ns}camera_link_optical"></link>
 
-    <gazebo reference="${ns_prefix}camera_link">
+    <gazebo reference="${prefijo_ns}camera_link">
         <material>Gazebo/Blue</material>
         <sensor name="camera" type="camera">
             <pose> 0 0 0 0 0 0 </pose>

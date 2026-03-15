@@ -1,36 +1,35 @@
 <?xml version="1.0"?>
 <robot name="robotito" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <!-- Namespace prefix argument (e.g. "robot1/") – empty string for single robot -->
+  <!-- namespace -->
   <xacro:arg name="prefix" default="" />
-  <xacro:property name="ns_prefix" value="$(arg prefix)" />
+  <xacro:property name="prefijo_ns" value="$(arg prefix)" />
 
-  <!-- Include inertial macros -->
+  <!-- los distintos archivos que usa -->
   <xacro:include filename="inertial_macros.xacro" />
   <xacro:include filename="gazebo_control.xacro" />
   <xacro:include filename="lidar.xacro" />
   <xacro:include filename="camera.xacro" />
 
-  <!-- Robot Properties -->
-  <xacro:property name="chassis_length" value="0.4" />
-  <xacro:property name="chassis_width" value="0.3" />
-  <xacro:property name="chassis_height" value="0.1" />
-  <xacro:property name="chassis_mass" value="1.0" />
+  <!-- ya las cosas del robot -->
+  <xacro:property name="largo_chasis" value="0.4" />
+  <xacro:property name="ancho_chasis" value="0.3" />
+  <xacro:property name="alto_chasis" value="0.1" />
+  <xacro:property name="masa_chasis" value="1.0" />
 
-  <xacro:property name="wheel_radius" value="0.1" />
-  <xacro:property name="wheel_thickness" value="0.04" />
-  <xacro:property name="wheel_mass" value="0.1" />
-  <xacro:property name="wheel_offset_x" value="0.1" />
-  <xacro:property name="wheel_offset_y" value="0.1705" />
-  <xacro:property name="wheel_offset_z" value="0.0" />
+  <xacro:property name="radio_rueda" value="0.1" />
+  <xacro:property name="grosor_rueda" value="0.04" />
+  <xacro:property name="masa_rueda" value="0.1" />
+  <xacro:property name="offset_rueda_x" value="0.1" />
+  <xacro:property name="offset_rueda_y" value="0.1705" />
+  <xacro:property name="offset_rueda_z" value="0.0" />
 
 
-  <xacro:property name="caster_wheel_radius" value="0.025" />
-  <xacro:property name="caster_wheel_mass" value="0.05" />
-  <xacro:property name="caster_wheel_offset_x" value="0.15" />
-  <xacro:property name="caster_wheel_offset_z" value="-0.075" />
+  <xacro:property name="radio_rueda_loca" value="0.025" />
+  <xacro:property name="masa_rueda_loca" value="0.05" />
+  <xacro:property name="offset_rueda_loca_x" value="0.15" />
+  <xacro:property name="offset_rueda_loca_z" value="-0.075" />
 
-  <!-- Materials -->
   <material name="white">
     <color rgba="1 1 1 1" />
   </material>
@@ -52,85 +51,83 @@
   </material>
 
 
-  <!-- BASE LINK -->
-  <link name="${ns_prefix}base_link">
+  <!-- el base link-->
+  <link name="${prefijo_ns}base_link">
     <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+            <box size="${largo_chasis} ${ancho_chasis} ${alto_chasis}"/>
         </geometry>
         <material name="green"/>
     </visual>
     <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+            <box size="${largo_chasis} ${ancho_chasis} ${alto_chasis}"/>
         </geometry>
     </collision>
-    <xacro:inertial_box mass="0.5" x="${chassis_length}" y="${chassis_width}" z="${chassis_height}">
+    <xacro:inertial_box mass="${masa_chasis}" x="${largo_chasis}" y="${ancho_chasis}" z="${alto_chasis}">
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_box>
   </link>
 
 
-  <!-- WHEELS -->
-
-  <!-- Wheel Macro -->
-  <xacro:macro name="wheel" params="prefix offset_y">
-    <link name="${ns_prefix}${prefix}_wheel">
+  <!-- wheel macro -->
+  <xacro:macro name="wheel" params="lado desplazamiento_y">
+    <link name="${prefijo_ns}${lado}_wheel">
       <visual>
         <origin xyz="0 0 0" rpy="1.5707 0 0 "/>
         <geometry>
-            <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+            <cylinder radius="${radio_rueda}" length="${grosor_rueda}"/>
         </geometry>
         <material name="black"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="1.5707 0 0 "/>
         <geometry>
-            <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+            <cylinder radius="${radio_rueda}" length="${grosor_rueda}"/>
         </geometry>
       </collision>
-      <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
+      <xacro:inertial_cylinder mass="${masa_rueda}" length="${grosor_rueda}" radius="${radio_rueda}">
         <origin xyz="0 0 0" rpy="1.5707 0 0"/>
       </xacro:inertial_cylinder>
     </link>
 
-    <joint name="${ns_prefix}${prefix}_wheel_joint" type="continuous">
-      <parent link="${ns_prefix}base_link"/>
-      <child link="${ns_prefix}${prefix}_wheel"/>
-      <origin xyz="${-wheel_offset_x} ${offset_y} ${wheel_offset_z}" rpy="0 0 0"/>
+    <joint name="${prefijo_ns}${lado}_wheel_joint" type="continuous">
+      <parent link="${prefijo_ns}base_link"/>
+      <child link="${prefijo_ns}${lado}_wheel"/>
+      <origin xyz="${-offset_rueda_x} ${desplazamiento_y} ${offset_rueda_z}" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
     </joint>
   </xacro:macro>
 
-  <xacro:wheel prefix="left" offset_y="${wheel_offset_y}"/>
-  <xacro:wheel prefix="right" offset_y="${-wheel_offset_y}"/>
+  <xacro:wheel lado="left" desplazamiento_y="${offset_rueda_y}"/>
+  <xacro:wheel lado="right" desplazamiento_y="${-offset_rueda_y}"/>
 
 
-  <!-- CASTER WHEEL -->
+<!-- rueda caster-->
 
-  <link name="${ns_prefix}caster_wheel">
+  <link name="${prefijo_ns}caster_wheel">
     <visual>
       <geometry>
-        <sphere radius="${caster_wheel_radius}"/>
+        <sphere radius="${radio_rueda_loca}"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <geometry>
-        <sphere radius="${caster_wheel_radius}"/>
+        <sphere radius="${radio_rueda_loca}"/>
       </geometry>
     </collision>
-    <xacro:inertial_sphere mass="${caster_wheel_mass}" radius="${caster_wheel_radius}">
+    <xacro:inertial_sphere mass="${masa_rueda_loca}" radius="${radio_rueda_loca}">
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_sphere>
   </link>
 
-  <joint name="${ns_prefix}caster_joint" type="fixed">
-    <parent link="${ns_prefix}base_link"/>
-    <child link="${ns_prefix}caster_wheel"/>
-    <origin xyz="${caster_wheel_offset_x} 0 ${caster_wheel_offset_z}"/>
+  <joint name="${prefijo_ns}caster_joint" type="fixed">
+    <parent link="${prefijo_ns}base_link"/>
+    <child link="${prefijo_ns}caster_wheel"/>
+    <origin xyz="${offset_rueda_loca_x} 0 ${offset_rueda_loca_z}"/>
   </joint>
 
 </robot>

@@ -1,10 +1,10 @@
 <launch>
-    <let name="urdf_path" 
+    <let name="ruta_urdf" 
          value="$(find-pkg-share practica1)/urdf/robotito.urdf" />
 
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description"
-               value="$(command 'cat $(var urdf_path)')" />
+             value="$(command 'cat $(var ruta_urdf)')" />
     </node>
 
     <node pkg="joint_state_publisher" exec="joint_state_publisher" />
