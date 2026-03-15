@@ -1,5 +1,6 @@
 /ros2_ws_multirobots/install/robot_bringup/share/robot_bringup/launch/robot_bringup.launch.py
 /ros2_ws_multirobots/install/robot_bringup/share/robot_bringup/world/mundo.sdf
+/ros2_ws_multirobots/install/robot_bringup/share/robot_bringup/world/mundo_objetos.sdf
 /ros2_ws_multirobots/install/robot_bringup/share/robot_bringup/config/bridge_config.yaml
 /ros2_ws_multirobots/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
 /ros2_ws_multirobots/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup

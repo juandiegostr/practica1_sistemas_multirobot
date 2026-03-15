@@ -24,14 +24,17 @@ def preparar_lanzamiento(context, *args, **kwargs):
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     archivo_xacro = os.path.join(pkg_practica1, 'urdf', 'robotito.urdf.xacro')
-    archivo_mundo = os.path.join(pkg_robot_bringup, 'world', 'mundo.sdf')
+    archivo_mundo = os.path.join(pkg_robot_bringup, 'world', 'mundo_objetos.sdf')
+
+    # Lanzamiento estandar: Gazebo con cliente GUI siempre activo.
+    argumentos_gz = f'-r {archivo_mundo}'
 
     # para lanzar gazebo
     lanzador_gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
         ),
-        launch_arguments={'gz_args': f'-r {archivo_mundo}'}.items(),
+        launch_arguments={'gz_args': argumentos_gz}.items(),
     )
 
     entidades = [lanzador_gazebo]

@@ -57,7 +57,7 @@
                 </noise>
             </lidar>
             <topic>$(arg prefix)scan</topic>
-            <gz_frame_id>$(arg prefix)laser_frame</gz_frame_id>
+            <frame_id>$(arg prefix)laser_frame</frame_id>
         </sensor>
     </gazebo>
 

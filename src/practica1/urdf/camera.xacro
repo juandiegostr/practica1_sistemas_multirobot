@@ -74,7 +74,7 @@
                 </clip>
             </camera>
             <topic>$(arg prefix)camera/image_raw</topic>
-            <gz_frame_id>$(arg prefix)camera_link_optical</gz_frame_id>
+            <frame_id>$(arg prefix)camera_link_optical</frame_id>
         </sensor>
     </gazebo>
 
