@@ -66,9 +66,9 @@
             <box size="${largo_chasis} ${ancho_chasis} ${alto_chasis}"/>
         </geometry>
     </collision>
-    <xacro:inertial_box mass="${masa_chasis}" x="${largo_chasis}" y="${ancho_chasis}" z="${alto_chasis}">
+    <xacro:inercia_caja mass="${masa_chasis}" x="${largo_chasis}" y="${ancho_chasis}" z="${alto_chasis}">
         <origin xyz="0 0 0" rpy="0 0 0"/>
-    </xacro:inertial_box>
+    </xacro:inercia_caja>
   </link>
 
 
@@ -88,9 +88,9 @@
             <cylinder radius="${radio_rueda}" length="${grosor_rueda}"/>
         </geometry>
       </collision>
-      <xacro:inertial_cylinder mass="${masa_rueda}" length="${grosor_rueda}" radius="${radio_rueda}">
+      <xacro:inercia_cilindro mass="${masa_rueda}" length="${grosor_rueda}" radius="${radio_rueda}">
         <origin xyz="0 0 0" rpy="1.5707 0 0"/>
-      </xacro:inertial_cylinder>
+      </xacro:inercia_cilindro>
     </link>
 
     <joint name="${prefijo_ns}${lado}_wheel_joint" type="continuous">
@@ -119,9 +119,9 @@
         <sphere radius="${radio_rueda_loca}"/>
       </geometry>
     </collision>
-    <xacro:inertial_sphere mass="${masa_rueda_loca}" radius="${radio_rueda_loca}">
+    <xacro:inercia_esfera mass="${masa_rueda_loca}" radius="${radio_rueda_loca}">
         <origin xyz="0 0 0" rpy="0 0 0"/>
-    </xacro:inertial_sphere>
+    </xacro:inercia_esfera>
   </link>
 
   <joint name="${prefijo_ns}caster_joint" type="fixed">

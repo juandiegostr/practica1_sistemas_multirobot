@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <xacro:macro name="inertial_sphere" params="mass radius *origin">
+    <xacro:macro name="inercia_esfera" params="mass radius *origin">
         <inertial>
             <xacro:insert_block name="origin"/>
             <mass value="${mass}" />
@@ -9,10 +9,10 @@
                     iyy="${(2/5) * mass * (radius*radius)}" iyz="0.0"
                     izz="${(2/5) * mass * (radius*radius)}" />
         </inertial>
-    </xacro:macro>  
+    </xacro:macro>
 
 
-    <xacro:macro name="inertial_box" params="mass x y z *origin">
+    <xacro:macro name="inercia_caja" params="mass x y z *origin">
         <inertial>
             <xacro:insert_block name="origin"/>
             <mass value="${mass}" />
@@ -23,7 +23,7 @@
     </xacro:macro>
 
 
-    <xacro:macro name="inertial_cylinder" params="mass length radius *origin">
+    <xacro:macro name="inercia_cilindro" params="mass length radius *origin">
         <inertial>
             <xacro:insert_block name="origin"/>
             <mass value="${mass}" />
